@@ -68,6 +68,6 @@ if __name__ == '__main__':
         print(f'Epoch [{epoch+1}/{num_epochs}] finished, Average Loss: {running_loss/num_iterations:.4f}')
 
     # Lưu mô hình sau khi huấn luyện xong
-    torch.save(model.state_dict(), 'modal/modal_encoder.pth')
+    torch.save(model.state_dict(), 'modal_encoder.pth')
 
-    print('Đã lưu mô hình vào modal/modal_encoder.pth')
+    print('Đã lưu mô hình vào modal_encoder.pth')
