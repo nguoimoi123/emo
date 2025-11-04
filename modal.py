@@ -12,7 +12,7 @@ class ModalEncoder(nn.Module):
         self.conv4 =self.make_block(in_channels = 256, out_channels = 512)
 
         self.fc1 = nn.Sequential(
-            nn.Linear(in_features = 32768, out_features = 512),
+            nn.Linear(in_features = 4608, out_features = 512),
             nn.ReLU(),
         )
         self.fc2 = nn.Sequential(
